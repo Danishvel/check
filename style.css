@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+    background-image: url("background.jpg");
+}
+
+canvas{
+    border-style:ridge;
+    border-color: rgb(0, 255, 170);
+    border-width: 15px;
+    animation-name: Magic;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Magic {
+    0%   {box-shadow:20px 20px 40px gold;}
+    25%  {box-shadow:20px 20px 40px yellow;}
+    50%  {box-shadow:20px 20px 40px blue;}
+    100% {box-shadow:20px 20px 40px saddlebrown;}
+  }
+
+.btn-success:hover{
+    background-color: blue;
+    color: rgb(174, 255, 0);
+    font-size: 50px;
+    box-shadow: 1px 1px 20px rgb(255, 0, 0);
+}
