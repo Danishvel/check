@@ -18,8 +18,8 @@ function gotposes(results){
     if (results.length > 0) {
         console.log(results);
        console.log("Nose X = " + results[0].pose.rightEye.x + "Nose Y = " + results[0].pose.rightEye.y);
-        eye_X = results[0].pose.rightEye.x - 20;
-        eye_Y = results[0].pose.rightEye.y - 20;
+        eye_X = results[0].pose.rightEye.x + 20;
+        eye_Y = results[0].pose.rightEye.y + 20;
     }
    }
    
