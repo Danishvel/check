@@ -19,7 +19,7 @@ function gotposes(results){
         console.log(results);
        console.log("eye X = " + results[0].pose.rightEye.x + "eye Y = " + results[0].pose.rightEye.y);
         eye_X = results[0].pose.rightEye.x + 40;
-        eye_Y = results[0].pose.rightEye.y + 40;
+        eye_Y = results[0].pose.rightEye.y - 40;
     }
    }
    
