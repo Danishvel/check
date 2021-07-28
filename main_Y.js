@@ -1,7 +1,7 @@
 eye_X = 0;
 eye_Y = 0;
 function preload(){
-mustache = loadImage("https://i.postimg.cc/8C23Q9J2/mustache.png");
+    glass = loadImage("https://i.postimg.cc/T1LgqJ19/glass3.png");
 }
 
 function setup(){
@@ -17,9 +17,9 @@ function setup(){
 function gotposes(results){
     if (results.length > 0) {
         console.log(results);
-       console.log("eye X = " + results[0].pose.nose.x + "Nose Y = " + results[0].pose.nose.y);
-       eye_X = results[0].pose.nose.x + 10;
-       eye_Y = results[0].pose.nose.y + 10;
+       console.log("eye X = " + results[0].pose.rightEye.x + "eye Y = " + results[0].pose.rightEye.y);
+        eye_X = results[0].pose.rightEye.x;
+        eye_Y = results[0].pose.rightEye.y;
     }
    }
    
@@ -30,6 +30,7 @@ function gotposes(results){
 
 function draw(){
     image(video, 0, 0, 300, 300);
+    image(glass, eye_X, eye_Y, 90, 50)
 }
 
 function Snap(){
