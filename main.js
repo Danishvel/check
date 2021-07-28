@@ -17,9 +17,9 @@ function setup(){
 function gotposes(results){
     if (results.length > 0) {
         console.log(results);
-       console.log("Nose X = " + results[0].pose.eye.x + "Nose Y = " + results[0].pose.eye.y);
-        eye_X = results[0].pose.eye.x - 10;
-        eye_Y = results[0].pose.eye.y - 10;
+       console.log("Nose X = " + results[0].pose.righteye.x + "Nose Y = " + results[0].pose.righteye.y);
+        eye_X = results[0].pose.righteye.x - 10;
+        eye_Y = results[0].pose.righteye.y - 10;
     }
    }
    
