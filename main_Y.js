@@ -1,5 +1,5 @@
-Nose_X = 0;
-Nose_Y = 0;
+eye_X = 0;
+eye_Y = 0;
 function preload(){
 mustache = loadImage("https://i.postimg.cc/8C23Q9J2/mustache.png");
 }
@@ -17,9 +17,9 @@ function setup(){
 function gotposes(results){
     if (results.length > 0) {
         console.log(results);
-       console.log("Nose X = " + results[0].pose.nose.x + "Nose Y = " + results[0].pose.nose.y);
-       Nose_X = results[0].pose.nose.x + 10;
-       Nose_Y = results[0].pose.nose.y + 10;
+       console.log("eye X = " + results[0].pose.nose.x + "Nose Y = " + results[0].pose.nose.y);
+       eye_X = results[0].pose.nose.x + 10;
+       eye_Y = results[0].pose.nose.y + 10;
     }
    }
    
